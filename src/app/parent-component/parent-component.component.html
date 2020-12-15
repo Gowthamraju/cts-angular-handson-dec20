@@ -1,0 +1,8 @@
+<div>
+    <h2>Parent Component</h2>
+    <h3>No. of Likes : {{Likes}}</h3>
+    <h3>No. of Dislikes : {{Dislikes}}</h3>
+    <button (click) = "handleClick()">Clear</button>
+    <app-child-component (childComponentlike) = Likes = $event"></app-child-component>
+    <app-child-component (childComponentdislike) = "Dislikes = $event"></app-child-component>
+</div>
